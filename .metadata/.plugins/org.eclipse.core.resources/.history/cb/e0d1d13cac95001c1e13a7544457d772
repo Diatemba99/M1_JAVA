@@ -1,0 +1,23 @@
+package test;
+
+public class Serveur {
+	private String numero;
+	private String nom;
+	private String ip;
+	private int port;
+	private Administrateur admin;
+	
+	//Constructor 
+	public Serveur(String numero, String nom, String ip, int port, Administrateur admin) {
+		super();
+		this.numero = numero;
+		this.nom = nom;
+		this.ip = ip;
+		this.port = port;
+		this.admin = admin;
+	}
+	
+	
+	
+
+}

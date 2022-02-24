@@ -1,0 +1,11 @@
+package test;
+
+public class Serveur {
+	private String numero;
+	private String nom;
+	private String ip;
+	private int port;
+	
+	
+
+}

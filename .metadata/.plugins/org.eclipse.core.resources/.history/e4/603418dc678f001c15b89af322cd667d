@@ -1,0 +1,35 @@
+package test;
+
+public class Point {
+		private double x;
+		private double y;
+		
+		//Creation of function
+		public Point(double xi, double yi)
+		{
+			x=xi;
+			y=yi;
+		}
+
+		//getter for X values
+		public double getX() {
+			return x;
+		}
+
+		public void setX(double x) {
+			this.x = x;
+		}
+
+		//getter for Y values
+		public double getY() {
+			return y;
+		}
+
+		
+		public void setY(double y) {
+			this.y = y;
+		}
+		
+		
+		
+}
