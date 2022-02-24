@@ -101,18 +101,6 @@ public class Application {
 						System.out.println("IP serveur"+ t.getIp());
 						System.out.println("Nom du serveur" +t.getNom());
 						System.out.println("Port du serveur"+ t.getPort());
-						
-					}
-						
-					break;
-				case 5:
-					for (Serveur t : listeserv)
-					{
-						System.out.println("______________________");
-						System.out.println("Numéro du serveur"+ t.getNumero());
-						System.out.println("IP serveur"+ t.getIp());
-						System.out.println("Nom du serveur" +t.getNom());
-						System.out.println("Port du serveur"+ t.getPort());
 						if(t.getAdmin()==null)
 							System.out.println("Administrateur inexistant !");
 						else {
@@ -121,10 +109,12 @@ public class Application {
 							System.out.println("Prenom Admin"+t.getAdmin().getPrenom());
 						}
 					}
+						
 					break;
-					
-					
+				case 5:
+					break;
 				case 6:
+					exit();
 					break;
 				default:
 					System.out.println("Choix indosponible !!");

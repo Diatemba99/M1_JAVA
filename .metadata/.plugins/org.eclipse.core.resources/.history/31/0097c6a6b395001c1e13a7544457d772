@@ -87,43 +87,15 @@ public class Application {
 							port=sc.nextInt();
 							
 							Serveur sv = new Serveur(numero, nomserv, ip, port, adm);
-							listeserv.add(sv);
 							
 						}
 					}
 					
 					break;
 				case 4:
-					for (Serveur t : listeserv)
-					{
-						System.out.println("______________________");
-						System.out.println("Numéro du serveur"+ t.getNumero());
-						System.out.println("IP serveur"+ t.getIp());
-						System.out.println("Nom du serveur" +t.getNom());
-						System.out.println("Port du serveur"+ t.getPort());
-						
-					}
-						
 					break;
 				case 5:
-					for (Serveur t : listeserv)
-					{
-						System.out.println("______________________");
-						System.out.println("Numéro du serveur"+ t.getNumero());
-						System.out.println("IP serveur"+ t.getIp());
-						System.out.println("Nom du serveur" +t.getNom());
-						System.out.println("Port du serveur"+ t.getPort());
-						if(t.getAdmin()==null)
-							System.out.println("Administrateur inexistant !");
-						else {
-							System.out.println("Matricule, Admin"+t.getAdmin().getMatr());
-							System.out.println("Nom Admin"+t.getAdmin().getNom());
-							System.out.println("Prenom Admin"+t.getAdmin().getPrenom());
-						}
-					}
 					break;
-					
-					
 				case 6:
 					break;
 				default:
