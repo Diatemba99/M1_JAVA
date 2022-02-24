@@ -75,19 +75,6 @@ public class Application {
 							System.out.println("Numéro de l'administrateur inexistant ");
 						}else {
 							System.out.println("Numéro du serveur ?");
-							numero=sc.nextLine();
-							
-							System.out.println("IP du serveur ?");
-							ip=sc.nextLine();
-							
-							System.out.println("Nom du serveur ?");
-							nomserv=sc.nextLine();
-							
-							System.out.println("Port du serveur ?");
-							port=sc.nextInt();
-							
-							Serveur sv = new Serveur(numero, nomserv, ip, port, adm);
-							
 						}
 					}
 					

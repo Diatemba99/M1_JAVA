@@ -1,0 +1,29 @@
+package test;
+import java.util.*;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Administrateur> listeadmin = new ArrayList<Administrateur>();
+		ArrayList<Serveur> listeserv= new ArrayList<Serveur>();
+		
+		int choix=0;
+		String numero,ip,nomserv,nom,prenom;
+		int matr,port;
+		do {
+			System.out.println("1-Ajouter un administrateur");
+			System.out.println("2-Lister les admins");
+			System.out.println("3-Ajouter un serveur");
+			System.out.println("4-Lister les serveurs");
+			System.out.println("5-Lister serveurs et admin");
+			System.out.println("6-Quitter ?");
+			
+		}while(choix!=6);
+		System.out.println("Fin du programme");
+
+	}
+
+}

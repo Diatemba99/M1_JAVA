@@ -13,7 +13,6 @@ public class Application {
 		int choix=0;
 		String numero,ip,nomserv,nom,prenom;
 		int matr,port;
-		Administrateur adm=null;
 		do {
 			System.out.println("1-Ajouter un administrateur");
 			System.out.println("2-Lister les admins");
@@ -52,44 +51,7 @@ public class Application {
 					
 				case 3:
 					System.out.println("Ce serveur est-il géré ? [O/N]");
-					String reponse = sc.nextLine();
-					reponse=reponse.toUpperCase();
-					if(reponse.equals("N"))
-					{
-						adm=null;
-					}else {
-						System.out.println("Numéro de l'administrateur ?");
-						int num = sc.nextInt();
-						sc.nextLine();
-						adm=null;
-						for (Administrateur y: listeadmin)
-						{
-							if(y.getMatr()==num)
-							{
-								adm = y;
-								break;
-							}
-						}
-						if(adm==null)
-						{
-							System.out.println("Numéro de l'administrateur inexistant ");
-						}else {
-							System.out.println("Numéro du serveur ?");
-							numero=sc.nextLine();
-							
-							System.out.println("IP du serveur ?");
-							ip=sc.nextLine();
-							
-							System.out.println("Nom du serveur ?");
-							nomserv=sc.nextLine();
-							
-							System.out.println("Port du serveur ?");
-							port=sc.nextInt();
-							
-							Serveur sv = new Serveur(numero, nomserv, ip, port, adm);
-							
-						}
-					}
+					
 					
 					break;
 				case 4:
